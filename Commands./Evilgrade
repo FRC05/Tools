@@ -1,0 +1,7 @@
+/Delivery method using Evilgrade/
+To run Evilgrade:
+cd /opt/evilgrade
+./evilgrade
+show modules   \\\ shows modules available 
+Configuring modules is similar to VEIL.
+IF POSSIBLE, try to identify open ports. 
